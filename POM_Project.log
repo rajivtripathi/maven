@@ -1,0 +1,4 @@
+34/02/2019 18:02:508 freemarker.cache TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+34/02/2019 18:02:508 freemarker.cache TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+34/02/2019 18:02:508 freemarker.cache Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Rajiv/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+34/02/2019 18:02:611 qa.crm.testcases.LoginPageTest  ------browser closed ----

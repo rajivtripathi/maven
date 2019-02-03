@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="qa.crm.utility.TestListener"/>
+  </listeners>
+  <test name="Suite 02 --- Firefox(failed)" parallel="tests">
+    <parameter name="mybrowser" value="firefox"/>
+    <classes>
+      <class name="qa.crm.testcases.LoginPageTest">
+        <methods>
+          <include name="ExtentReportsetup"/>
+          <include name="validateLoginImage"/>
+          <include name="closeTest"/>
+          <include name="validateLoginPageTitle"/>
+          <include name="LoginTest"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- qa.crm.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Suite 02 - Firefox(failed) -->
+  <test name="Suite 01 - Chrome(failed)" parallel="tests">
+    <parameter name="mybrowser" value="chrome"/>
+    <classes>
+      <class name="qa.crm.testcases.LoginPageTest">
+        <methods>
+          <include name="ExtentReportsetup"/>
+          <include name="closeTest"/>
+          <include name="validateLoginPageTitle"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- qa.crm.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Suite 01 - Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
