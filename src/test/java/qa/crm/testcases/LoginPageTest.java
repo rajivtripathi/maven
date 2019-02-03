@@ -77,7 +77,7 @@ public void LoginTest(){
 	test=extent.createTest("-----LoginTest-----");
 	log.info(" ------Test 3 done before assertion ----");
 Assert.assertTrue(true);
-log.info(" ------Test 3 After assertion ----");
+log.info(" ------Test 3 After assertion... ----");
 
 	 } 
 
