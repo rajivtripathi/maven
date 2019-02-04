@@ -55,7 +55,7 @@ public void validateLoginImage() {
 	Boolean value=loginPage.validateCRMlImage();
 	test=extent.createTest("----validateLoginImage----");
 	Assert.assertTrue(value);	
-	log.info(" ------Test 1 completed ----rajiv seen it---");	
+	log.info(" ------Test 1 completed ----rajiv seen it---!!!!");	
 	
 	}
 
