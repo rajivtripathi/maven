@@ -55,8 +55,7 @@ public void validateLoginImage() {
 	Boolean value=loginPage.validateCRMlImage();
 	test=extent.createTest("----validateLoginImage----");
 	Assert.assertTrue(value);	
-	log.info(" ------Test 1 completed ----");
-	
+	log.info(" ------Test 1 completed ----rajiv seen it---");	
 	
 	}
 
@@ -65,7 +64,7 @@ public void validateLoginPageTitle(){
 	 String name1=loginPage.validateloginTitle();
 	 log.info(" ------Test 2 started ----");
 	 test=extent.createTest("----validateLoginPageTitle----");
-	 Assert.assertEquals(name1,"#1 Free CRM software in the cloud for sales and service!!!");
+	 Assert.assertEquals(name1,"#1 Free CRM software in the cloud for sales and service");
 	 log.info(" ------Test 2 done ----");
 	 
 	}
