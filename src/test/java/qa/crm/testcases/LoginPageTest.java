@@ -42,7 +42,7 @@ public void setup(String mybrowser) throws InterruptedException  {
 
 log.info(" ------browser initialization started ----");
 initialization(mybrowser);
-log.info(" ------browser initialization done ----");
+log.info(" ------browser initialization done !!!!!!");
 System.out.println("----initialized-----");
 loginPage=new LoginPage();
 
