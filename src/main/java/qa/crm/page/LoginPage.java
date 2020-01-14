@@ -1,6 +1,7 @@
 package qa.crm.page;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,7 +10,7 @@ import baseclass.TestBase;
 
 public class LoginPage extends TestBase {
 
-	
+
 @FindBy(xpath="//*[@name='username']")
 WebElement username;
 
@@ -20,7 +21,9 @@ WebElement password;
 WebElement image;
 
 @FindBy(xpath="//*[@type='submit']")
-WebElement loginbtn;                 
+WebElement loginbtn;
+
+               
 
 public LoginPage(){
 	System.out.println(" ---- its Login Page Constructor---");
@@ -33,7 +36,8 @@ public String validateloginTitle(){
 	return title;
 }
 
-public boolean validateCRMlImage(){
+public boolean validateCRMImage(){
+	
 	return image.isDisplayed();
 	
 }

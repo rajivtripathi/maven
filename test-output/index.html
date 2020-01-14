@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="qa.crm.testcases.LoginPageTest" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="qa.crm.testcases.HomePageTest" hash-for-method="homePageTitle">homePageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,16 +130,24 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">qa.crm.testcases.LoginPageTest</span>
+              <span class="class-name">qa.crm.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginTest">
-                  </a> <!-- LoginTest -->
-                  <span class="method-name">LoginTest</span>
+                  <a name="homePageTitle">
+                  </a> <!-- homePageTitle -->
+                  <span class="method-name">homePageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">qa.crm.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="validateLoginImage">
@@ -165,16 +173,14 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;qa.crm.utility.TestListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test name=&quot;Suite 01 - Chrome&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;mybrowser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;qa.crm.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;qa.crm.testcases.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Suite 01 - Chrome --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,7 +192,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Suite 01 - Chrome (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,22 +220,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginTest')
-data.setCell(0, 2, 'qa.crm.testcases.LoginPageTest')
-data.setCell(0, 3, 7605);
+data.setCell(0, 1, 'homePageTitle')
+data.setCell(0, 2, 'qa.crm.testcases.HomePageTest')
+data.setCell(0, 3, 5114);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validateLoginImage')
 data.setCell(1, 2, 'qa.crm.testcases.LoginPageTest')
-data.setCell(1, 3, 1217);
+data.setCell(1, 3, 147);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validateLoginPageTitle')
 data.setCell(2, 2, 'qa.crm.testcases.LoginPageTest')
-data.setCell(2, 3, 869);
+data.setCell(2, 3, 21);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -244,9 +250,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">qa.crm.testcases.LoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">LoginTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -261,52 +274,51 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">203 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">PageSetup</span>
+                <span class="method-start">23751 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLoginImage</span>
-                <span class="method-start">29201 ms</span>
+                <span class="method-start">23876 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeTest</span>
-                <span class="method-start">30420 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
                 <span class="method-name">setup([TestResult name=validateLoginImage status=SUCCESS method=LoginPageTest.validateLoginImage()[pri:1, ...)</span>
-                <span class="method-start">32210 ms</span>
+                <span class="method-start">24027 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">32210 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">26247 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">PageSetup</span>
+                <span class="method-start">38171 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLoginPageTitle</span>
-                <span class="method-start">55782 ms</span>
+                <span class="method-start">38173 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeTest</span>
-                <span class="method-start">56653 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">setup([TestResult name=validateLoginPageTitle status=SUCCESS method=LoginPageTest.validateLoginPageTitle()...)</span>
-                <span class="method-start">58334 ms</span>
+                <span class="method-start">38196 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">qa.crm.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">58334 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">40116 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">LoginTest</span>
-                <span class="method-start">79239 ms</span>
+                <span class="method-name">homePageTitle</span>
+                <span class="method-start">48719 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeTest</span>
-                <span class="method-start">86846 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">setup([TestResult name=LoginTest status=SUCCESS method=LoginPageTest.LoginTest()[pri:3, instance:qa.crm.te...)</span>
-                <span class="method-start">88358 ms</span>
+                <span class="method-name">setup([TestResult name=homePageTitle status=SUCCESS method=HomePageTest.homePageTitle()[pri:2, instance:qa...)</span>
+                <span class="method-start">53835 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

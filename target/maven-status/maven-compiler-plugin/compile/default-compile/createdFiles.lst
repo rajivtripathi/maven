@@ -1,7 +1,0 @@
-qa\crm\page\ContactsPage.class
-qa\crm\utility\TestListener.class
-qa\crm\utility\TestUtility.class
-qa\crm\utility\WebEventListener.class
-baseclass\TestBase.class
-qa\crm\page\HomePage.class
-qa\crm\page\LoginPage.class
