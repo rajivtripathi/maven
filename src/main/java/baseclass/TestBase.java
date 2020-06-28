@@ -8,41 +8,21 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import qa.crm.page.HomePage;
 import qa.crm.page.LoginPage;
 import qa.crm.testcases.LoginPageTest;
-import qa.crm.utility.WebEventListener;
+
 
 
 public class TestBase {	
 	public static Properties prop;
-	public static WebDriver driver;		
-	public ExtentHtmlReporter reporter;
-	public static ExtentReports extent;
-	public static ExtentTest test ;
-	public static Logger log ;
-	
-
-	 
-	/*public static EventFiringWebDriver edriver;
-	public static WebEventListener eventListener;
-	
-	
-	edriver = new EventFiringWebDriver(driver);
-	// Now create object of EventListerHandler to register it with EventFiringWebDriver
-	eventListener = new WebEventListener();
-	edriver.register(eventListener);
-	driver = edriver;*/
+	public static WebDriver driver;
 
 public TestBase(){
 try{
@@ -54,18 +34,18 @@ prop = new Properties();
 prop.load(fs); 
 }
 catch(Exception e) {
-	System.out.println(e.getMessage());
-	System.out.println(e.getStackTrace());
+	
 	
 	
 }	
 } 
 
 
-public static void openBrowser(String mybrowser) throws InterruptedException {
+public static void openBrowser() throws InterruptedException {
 
+	String mybrowser;
 mybrowser= prop.getProperty("browser");
-System.out.println(prop.getProperty("browser"));
+System.out.println("------browser----"+ mybrowser);
 //if (browsername.equalsIgnoreCase("chrome"))
 
 	if (mybrowser.equalsIgnoreCase("chrome"))
@@ -93,55 +73,9 @@ System.out.println(" browser maximized");
 
 } 
 
-@BeforeMethod
-@Parameters("mybrowser")
-public void setup() throws InterruptedException  {
-
-	System.out.println("----@BeforeMethod >>>LoginPage---- called---");
-	reporter = new ExtentHtmlReporter("./ExtentReports/Result.html");
-	reporter.setAppendExisting(true);
-	extent = new ExtentReports();
-	extent.attachReporter(reporter);
-	log = Logger.getLogger(LoginPageTest.class);
-log.info(" ------browser initialization started ----");
-openBrowser("mybrowser");
-log.info(" ------browser initialization done ----");
-
-	}
-
-@AfterMethod()
-public static void setup(ITestResult result) throws Throwable  {
-
-	extent.flush();
-	System.out.println("---Repor Flush has been done---");
-	
-System.out.println("----@AfterMethod() >>>LoginPage---- called---");
-if(result.getStatus()==ITestResult.FAILURE) {
-	
-	
-test.fail("test is failed" , MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Rajiv\\maven\\POM_Project\\ScreenShot\\LoginTest.jpg").build());
-	
-}
-
-else if (result.getStatus()==ITestResult.SUCCESS) {
-	test.pass(" test is passed " , MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Rajiv\\maven\\POM_Project\\ScreenShot\\LoginTest.jpg").build());
-	}
-
-else if (result.getStatus()==ITestResult.SKIP) {
-	test.skip("Test is skipped" , MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Rajiv\\maven\\POM_Project\\ScreenShot\\LoginTest.jpg").build());	
-	
-			}
 
 
-if(driver!=null)
-{
-	driver.quit();
-}
 
-log.info(" ------|||| browser closed |||||----");
-	}
-
-	
 
 
 }

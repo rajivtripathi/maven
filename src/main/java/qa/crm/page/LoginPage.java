@@ -26,6 +26,8 @@ WebElement loginbtn;
                
 
 public LoginPage(){
+	
+	this.driver=driver;
 	System.out.println(" ---- its Login Page Constructor---");
 	PageFactory.initElements(driver, this);
 }

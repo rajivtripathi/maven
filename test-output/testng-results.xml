@@ -1,84 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="55260" started-at="2019-11-15T03:27:32Z" finished-at="2019-11-15T03:28:27Z">
+  <suite name="Suite" duration-ms="33066" started-at="2020-06-28T12:47:21Z" finished-at="2020-06-28T12:47:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="55260" started-at="2019-11-15T03:27:32Z" finished-at="2019-11-15T03:28:27Z">
+    <test name="Test" duration-ms="33066" started-at="2020-06-28T12:47:21Z" finished-at="2020-06-28T12:47:54Z">
       <class name="qa.crm.testcases.LoginPageTest">
-        <test-method status="PASS" signature="ExtentReportsetup()[pri:0, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="ExtentReportsetup" is-config="true" duration-ms="14" started-at="2019-11-15T08:57:32Z" finished-at="2019-11-15T08:57:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReportsetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="setup" is-config="true" duration-ms="23713" started-at="2019-11-15T08:57:32Z" finished-at="2019-11-15T08:57:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="PageSetup()[pri:0, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="PageSetup" is-config="true" duration-ms="125" started-at="2019-11-15T08:57:56Z" finished-at="2019-11-15T08:57:56Z">
+        <test-method status="PASS" signature="PageSetup()[pri:0, instance:qa.crm.testcases.LoginPageTest@eb6449b]" name="PageSetup" is-config="true" duration-ms="29305" started-at="2020-06-28T18:17:24Z" finished-at="2020-06-28T18:17:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageSetup -->
-        <test-method status="PASS" signature="validateLoginImage()[pri:1, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="validateLoginImage" duration-ms="147" started-at="2019-11-15T08:57:56Z" finished-at="2019-11-15T08:57:56Z">
+        <test-method status="PASS" signature="validateLoginImage()[pri:1, instance:qa.crm.testcases.LoginPageTest@eb6449b]" name="validateLoginImage" duration-ms="116" started-at="2020-06-28T18:17:53Z" finished-at="2020-06-28T18:17:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginImage -->
-        <test-method status="PASS" signature="setup(org.testng.ITestResult)[pri:0, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="setup" is-config="true" duration-ms="2217" started-at="2019-11-15T08:57:56Z" finished-at="2019-11-15T08:57:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateLoginImage status=SUCCESS method=LoginPageTest.validateLoginImage()[pri:1, instance:qa.crm.testcases.LoginPageTest@53b32d7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="setup" is-config="true" duration-ms="11924" started-at="2019-11-15T08:57:58Z" finished-at="2019-11-15T08:58:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="PageSetup()[pri:0, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="PageSetup" is-config="true" duration-ms="2" started-at="2019-11-15T08:58:10Z" finished-at="2019-11-15T08:58:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PageSetup -->
-        <test-method status="PASS" signature="validateLoginPageTitle()[pri:2, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="validateLoginPageTitle" duration-ms="21" started-at="2019-11-15T08:58:10Z" finished-at="2019-11-15T08:58:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginPageTitle -->
-        <test-method status="PASS" signature="setup(org.testng.ITestResult)[pri:0, instance:qa.crm.testcases.LoginPageTest@53b32d7]" name="setup" is-config="true" duration-ms="1919" started-at="2019-11-15T08:58:10Z" finished-at="2019-11-15T08:58:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateLoginPageTitle status=SUCCESS method=LoginPageTest.validateLoginPageTitle()[pri:2, instance:qa.crm.testcases.LoginPageTest@53b32d7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setup()[pri:0, instance:qa.crm.testcases.LoginPageTest@eb6449b]" name="setup" is-config="true" duration-ms="1477" started-at="2020-06-28T18:17:53Z" finished-at="2020-06-28T18:17:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- qa.crm.testcases.LoginPageTest -->
-      <class name="qa.crm.testcases.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:qa.crm.testcases.HomePageTest@5442a311]" name="setup" is-config="true" duration-ms="8603" started-at="2019-11-15T08:58:12Z" finished-at="2019-11-15T08:58:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="homePageTitle()[pri:2, instance:qa.crm.testcases.HomePageTest@5442a311]" name="homePageTitle" duration-ms="5114" started-at="2019-11-15T08:58:20Z" finished-at="2019-11-15T08:58:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageTitle -->
-        <test-method status="PASS" signature="setup(org.testng.ITestResult)[pri:0, instance:qa.crm.testcases.HomePageTest@5442a311]" name="setup" is-config="true" duration-ms="1418" started-at="2019-11-15T08:58:26Z" finished-at="2019-11-15T08:58:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=homePageTitle status=SUCCESS method=HomePageTest.homePageTitle()[pri:2, instance:qa.crm.testcases.HomePageTest@5442a311] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- qa.crm.testcases.HomePageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

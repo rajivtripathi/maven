@@ -2,16 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
-    <parameter name="mybrowser" value="chrome"/>
     <classes>
-      <class name="qa.crm.testcases.HomePageTest">
+      <class name="qa.crm.testcases.LoginPageTest">
         <methods>
-          <include name="setup1"/>
-          <include name="homePageTitle"/>
-          <include name="setup"/>
+          <include name="validateLoginImage"/>
+          <include name="PageSetup"/>
+          <include name="LoginTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- qa.crm.testcases.HomePageTest -->
+      </class> <!-- qa.crm.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
